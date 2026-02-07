@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Egg Tap Quest</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="top-bar">
+        <div>
+          <h1>Dragon Egg Tap Quest</h1>
+          <p class="subtitle">Tap the metallic dragon egg, crack every layer, and earn crypto rewards.</p>
+        </div>
+        <div class="score-panel">
+          <span class="score-label">Total Rewards</span>
+          <div class="score" id="score">0</div>
+          <div class="score-sub">Coins</div>
+        </div>
+      </header>
+
+      <main class="game-area">
+        <section class="egg-panel">
+          <div class="egg-stage">
+            <div class="egg" id="egg">
+              <div class="egg-core" id="eggCore"></div>
+            </div>
+            <div class="tap-hint" id="tapHint">Tap to play</div>
+          </div>
+          <div class="layer-info">
+            <div class="layer-title" id="layerTitle">Layer 1: Titanium Shell</div>
+            <div class="layer-sub" id="layerSub">10 taps to crack</div>
+            <div class="progress-track">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="details-panel">
+          <div class="stats">
+            <div class="stat-card">
+              <span class="stat-label">Layer</span>
+              <span class="stat-value" id="layerCount">1 / 10</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Tap Power</span>
+              <span class="stat-value">+1 / +2 / +5</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-label">Difficulty</span>
+              <span class="stat-value" id="difficulty">Easy</span>
+            </div>
+          </div>
+
+          <div class="materials">
+            <h2>Egg Materials</h2>
+            <ul id="materialsList"></ul>
+          </div>
+
+          <div class="ad-banner">
+            <div class="ad-label">Ad Banner</div>
+            <div class="ad-body">
+              Watch a sponsor clip to double your rewards for 20 seconds.
+            </div>
+            <button class="ad-button">Watch Ad</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
